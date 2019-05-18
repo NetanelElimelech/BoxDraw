@@ -9,6 +9,43 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-
+        <Rectangle x:Name="Front" HorizontalAlignment="Left" Height="300" Margin="466,216,0,0" VerticalAlignment="Top" Width="300" Stroke="Black"/>
+        <Rectangle x:Name="Back" HorizontalAlignment="Left" Height="300" Margin="616,66,0,0" VerticalAlignment="Top" Width="300" Stroke="Black"/>
+        <Rectangle x:Name="RightSide" HorizontalAlignment="Left" Height="300" Margin="766,216,0,0" VerticalAlignment="Top" Width="150" Stroke="Black" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+            <Rectangle.RenderTransform>
+                <CompositeTransform SkewY="-45" TranslateY="-75"/>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle x:Name="LeftSide" HorizontalAlignment="Left" Height="300" Margin="466,216,0,0" VerticalAlignment="Top" Width="150" Stroke="Black" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+            <Rectangle.RenderTransform>
+                <CompositeTransform SkewY="-45" TranslateY="-75"/>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <TextBox x:Name="HeightTextBlock" HorizontalAlignment="Left" Margin="183,86,0,0" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="119,94,0,0" Text="Height" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBox x:Name="WidthTextBlock" HorizontalAlignment="Left" Margin="183,141,0,0" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="119,149,0,0" Text="Width" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBox x:Name="DepthTextBlock" HorizontalAlignment="Left" Margin="183,186,0,0" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="119,194,0,0" Text="Depth" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBox x:Name="TopWidthTextBlock" HorizontalAlignment="Left" Margin="183,236,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="TopHeightTextBlock" HorizontalAlignment="Left" Margin="303,236,0,0" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="266,294,0,0" Text="cm" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="271,250,0,0" Text="x" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="119,244,0,0" Text="Top" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBox x:Name="GlassThicknessTextBlock" HorizontalAlignment="Left" Margin="183,286,0,0" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="66,294,0,0" Text="Glass Thickness" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="382,248,0,0" Text="cm" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="266,190,0,0" Text="cm" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="266,149,0,0" Text="cm" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="266,97,0,0" Text="cm" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <CheckBox Content="Grinding" HorizontalAlignment="Left" Margin="183,350,0,0" VerticalAlignment="Top" IsChecked="True"/>
+        <TextBlock HorizontalAlignment="Left" Margin="433,290,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="114" Width="14"><Run Text="H"/><LineBreak/><Run Text="e"/><LineBreak/><Run Text="i"/><LineBreak/><Run Text="g"/><LineBreak/><Run Text="h"/><LineBreak/><Run Text="t"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="579,532,0,0" Text="Width" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="857,436,0,0" Text="Depth" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+            <TextBlock.RenderTransform>
+                <CompositeTransform Rotation="-45"/>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <Button x:Name="Calculate" Content="Calculate" HorizontalAlignment="Left" Margin="183,422,0,0" VerticalAlignment="Top" Height="60" Width="120" FontSize="20"/>
     </Grid>
 </Page>
